@@ -36,4 +36,4 @@ for letter in sentence:
         encrypted.append(caesar_cipher.get(letter.lower(), letter.lower()))
     else:
         encrypted.append(letter.lower())
-print(f"{sentence}, {''.join(encrypted)}")
+print(f"The encrypted sentence is: {''.join(encrypted)}")
