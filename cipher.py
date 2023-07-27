@@ -37,3 +37,4 @@ for letter in sentence:
     else:
         encrypted.append(letter.lower())
 print(f"The encrypted sentence is: {''.join(encrypted)}")
+# This is the finished code!!
