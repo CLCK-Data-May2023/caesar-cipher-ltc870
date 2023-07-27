@@ -29,14 +29,11 @@ caesar_cipher = {
 
 sentence = input("Please enter a sentence: ")
 
-sentence = sentence.lower()
-
 encrypted = []
 
-
 for letter in sentence:
-    if letter.isalpha() and letter in caesar_cipher:
-        encrypted.append(caesar_cipher[letter])
+    if letter.isalpha():
+        encrypted.append(caesar_cipher.get(letter.lower(), letter.lower()))
     else:
-        encrypted.append(letter)
-print("".join(encrypted))
+        encrypted.append(letter.lower())
+print(f"{sentence}, {''.join(encrypted)}")
