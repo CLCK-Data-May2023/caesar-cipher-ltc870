@@ -35,8 +35,8 @@ encrypted = []
 
 
 for letter in sentence:
-    if letter == " ":
-        encrypted.append(" ")
-    else:
+    if letter.isalpha() and letter in caesar_cipher:
         encrypted.append(caesar_cipher[letter])
+    else:
+        encrypted.append(letter)
 print("".join(encrypted))
